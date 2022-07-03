@@ -10,24 +10,122 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+
+        @media only screen and (min-width: 960px) {
+            .main-container {
+                width: 600px;
+            }
+
+            .promo1-rigth img {
+                max-height: 515px !important;
+            }
+            
+        }
+
+        @media only screen and (max-width: 960px) {
+            .main-container {
+                width: 600px;
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+            .main-container {
+                width: 100%;
+            }
+
+            .top-nav-left {
+                width: 100%;
+            }
+            .top-nav-right {
+                width: 100%;
+            }
+            .top-nav-tdl {
+                text-align: center;
+            }
+            .top-nav-tdr {
+                text-align: center;
+                padding-top: 15px !important;
+                float: none !important;
+            }
+
+
+            .promo1-left {
+                width: 100%;
+            }
+
+            .promo1-right {
+                width: 100%;
+            }
+
+            .promo1-td {
+                text-align: center;
+            }
+
+            .promo1-btn {
+                margin:30px auto 0 auto !important;
+            }
+
+            .promo3-left {
+                width: 100%;
+            }
+            .promo3-right {
+                width: 100%;
+            }
+            .promo3-td {
+                text-align: center;
+            }
+            .promo3-btn {
+                margin:30px auto 0 auto !important;
+            }
+
+            .promo4-left {
+                width: 100%;
+            }
+
+            .promo4-right {
+                width: 100%;
+            }
+
+            .promo4-td {
+                text-align: center;    
+            }
+            
+            .promo4-btn {
+                margin:30px auto 0 auto !important;
+            }
+
+            .contact-us-left {
+                width: 100%;
+            }
+            .contact-us-right {
+                width: 100%;
+            }
+            .contact-us-td {
+                text-align: center;
+            }
+        }
+    </style>
+
 </head>
-<body style="margin: 0; padding: 50px 0;" bgcolor="#b92d38">
+<body style="margin: 0; padding: 50px 0;" bgcolor="#B8C7E0">
 
     <table width="100%" border="0" cellspacing="0" cellpadding="0">
         <tbody>
             <tr>
                 <td>
                     <!-- start of main content -->
-                    <table width="600px" border="0" cellspacing="0" cellpadding="0" align="center" bgcolor="#fff" style="border-radius: 5px;">
+                    <table class="main-container" width="600px" border="0" cellspacing="0" cellpadding="0" bgcolor="#fff" style="border-radius: 5px; margin: 0 auto;">
                         <!-- start of top nav -->
                         <tr>
                             <td>
-                                <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" style="font-family: 'Open Sans', sans-serif;">
+                                <table class="top-nav" width="100%" border="0" cellspacing="0" cellpadding="0" align="center" style="font-family: 'Open Sans', sans-serif;">
                                     <tr>
                                         <td style="padding: 15px;">
-                                            <table width="50%" border="0" cellspacing="0" cellpadding="0" align="left" style="font-family: 'Open Sans', sans-serif;">
+                                            <table class="top-nav-left" width="50%" border="0" cellspacing="0" cellpadding="0" style="font-family: 'Open Sans', sans-serif; float:left;">
                                                 <tr>
-                                                    <td style="text-transform: uppercase; font-size: 14px;">
+                                                    <td class="top-nav-tdl" style="text-transform: uppercase; font-size: 14px;">
                                                         <span>
                                                             <a href="#" style="text-decoration: none; padding-right: 5px; color: #333">Visit our website</a> &#124;
                                                             <a href="#" style="text-decoration: none; padding-left: 5px; color: #333">View online</a>
@@ -36,9 +134,9 @@
                                                 </tr>
                                             </table>
                                             
-                                            <table width="50%" border="0" cellspacing="0" cellpadding="0" align="right" style="font-family: 'Open Sans', sans-serif;">
+                                            <table class="top-nav-right" width="50%" border="0" cellspacing="0" cellpadding="0" style="font-family: 'Open Sans', sans-serif; float:right;">
                                                 <tr>
-                                                    <td align="right" style="text-transform: uppercase; font-size: 14px; margin-left: auto; color: #333">
+                                                    <td class="top-nav-tdr" style="text-transform: uppercase; font-size: 14px; margin-left: auto; color: #333; float: right;">
                                                         <span style="font-weight: 600;">Order Now at</span> <a href="#" style="text-decoration: none; text-transform: uppercase; font-size: 14px; color:#a42f38; font-weight: 500; ">(123) 456-7890</a> 
                                                         
                                                     </td>
@@ -54,10 +152,10 @@
                         <!-- start of header -->
                         <tr>
                             <td>
-                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <table class="header" width="100%" border="0" cellspacing="0" cellpadding="0">
                                     <tr align="center">
                                         <td style="padding: 70px 0; background: #F98F41">
-                                            <img src="./img/logo.svg" alt="" width="500px">
+                                            <img src="./img/logo.svg" alt="" max-width="500px">
                                         </td>
                                     </tr>
                                 </table>
@@ -67,24 +165,24 @@
 
                         <!-- start of promo 1 -->
                         <tr>
-                            <td>
-                                <table width="50%" border="0" cellspacing="0" cellpadding="0" align="left" style="font-family: 'Open Sans', sans-serif;">
+                            <td >
+                                <table class="promo1-left" width="50%" border="0" cellspacing="0" cellpadding="0" style="font-family: 'Open Sans', sans-serif; float: left;">
                                     <tr>
-                                        <td style="padding: 60px 15px">
+                                        <td class="promo1-td" style="padding: 60px 15px;">
                                             <h2 style="margin: 0; padding:0; font-size: 35px; font-weight: 500;color: #b02731;">Always Fresh And Delicious Burgers</h2>
 
                                             <p style="margin: 0; padding:25px 0 40px 0; text-transform: uppercase;font-size: 14px; font-weight: 600;color: #686868;">Extra Crispy</p>
 
                                             <p style="margin: 0; padding:0; font-size: 16px; line-height: 2;color: #686868;">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
 
-                                            <p style="background: #f88439; width: fit-content; padding: 10px 20px; margin:30px 0 0 0;"><a href="#" style="text-transform: uppercase; color: #fff; text-decoration:none;font-size: 18px; font-weight: 600;">Order Now</a></p>
+                                            <p class="promo1-btn" style="background: #f88439; width: fit-content; padding: 10px 20px; margin:30px 0 0 0;"><a href="#" style="text-transform: uppercase; color: #fff; text-decoration:none;font-size: 18px; font-weight: 600;">Order Now</a></p>
                                         </td>
                                     </tr>
                                 </table>
-                                <table width="50%" border="0" cellspacing="0" cellpadding="0" align="right" style="font-family: 'Open Sans', sans-serif;">
+                                <table class="promo1-right" width="50%" border="0" cellspacing="0" cellpadding="0" style="font-family: 'Open Sans', sans-serif; float:right;">
                                     <tr style="background: #181617;">
                                         <td>
-                                            <img src="./img/promo-1.jpg" alt="" style="width: 100%; margin-bottom: -5px;">
+                                            <img src="./img/promo-1.jpg" alt="" style="width: 100%;height: 100%;object-fit: cover; margin-bottom: -5px;">
                                         </td>
                                     </tr>
                                 </table>
@@ -95,21 +193,21 @@
                         <!-- start of promo 2 -->
                         <tr>
                             <td>
-                                <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" style="font-family: 'Open Sans', sans-serif;">
+                                <table class="promo2" width="100%" border="0" cellspacing="0" cellpadding="0" style="font-family: 'Open Sans', sans-serif;">
                                     <tr align="center" style="background: #8A2522">
                                         <td style="margin:0; padding:0;">
-                                            <img src="./img/promo-2.jpeg" alt="" style="margin-bottom: -5px;">
+                                            <img src="./img/promo-2.jpeg" alt="" style="margin-bottom: -5px; max-width: 100%;">
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td align="center" style="padding: 60px 15px">
+                                        <td style="padding: 60px 15px; text-align: center;">
                                             <h2 style="margin: 0; padding:0; font-size: 35px; font-weight: 500;color: #b02731;">Monster-Size Burgers</h2>
                                             
                                             <p style="margin: 0; padding:25px 0 40px 0; text-transform: uppercase;font-size: 14px; font-weight: 600;color: #686868;">carefully stacked</p>
 
                                             <p style="margin: 0; padding:0 40px; font-size: 16px; line-height: 2;color: #686868;">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
 
-                                            <p style="background: #f88439; width: fit-content; padding: 10px 20px; margin:30px 0 0 0;"><a href="#" style="text-transform: uppercase; color: #fff; text-decoration:none;font-size: 18px; font-weight: 600;">Order Now</a></p>
+                                            <p style="background: #f88439; width: fit-content; padding: 10px 20px; margin:30px auto 0 auto;"><a href="#" style="text-transform: uppercase; color: #fff; text-decoration:none;font-size: 18px; font-weight: 600;">Order Now</a></p>
 
 
                                         </td>
@@ -122,23 +220,23 @@
                         <!-- start of promo 3 -->
                         <tr>
                             <td>
-                                <table width="50%" border="0" cellspacing="0" cellpadding="0" align="left" style="font-family: 'Open Sans', sans-serif;">
+                                <table class="promo3-left" width="50%" border="0" cellspacing="0" cellpadding="0" style="font-family: 'Open Sans', sans-serif; float: left;">
                                     <tr>
                                         <td>
                                             <img src="./img/promo-3.jpeg" alt="" style="width: 100%; margin-bottom: -5px;">
                                         </td>
                                     </tr>
                                 </table>
-                                <table width="50%" border="0" cellspacing="0" cellpadding="0" align="right" style="font-family: 'Open Sans', sans-serif;">
+                                <table class="promo3-right" width="50%" border="0" cellspacing="0" cellpadding="0" style="font-family: 'Open Sans', sans-serif; float: right;">
                                     <tr style="background: #f5f5f5;">
-                                        <td style="padding: 60px 15px 60px 30px;">
+                                        <td class="promo3-td" style="padding: 60px 15px 60px 30px;">
                                             <h2 style="margin: 0; padding:0; font-size: 35px; font-weight: 500;color: #b02731;">Juicy Burgers with Exotic Spices</h2>
 
                                             <p style="margin: 0; padding:25px 0 40px 0; text-transform: uppercase;font-size: 14px; font-weight: 600;color: #686868;">Extra Spices</p>
 
                                             <p style="margin: 0; padding:0; font-size: 16px; line-height: 2;color: #686868;">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
 
-                                            <p style="background: #f88439; width: fit-content; padding: 10px 20px; margin:30px 0 0 0;"><a href="#" style="text-transform: uppercase; color: #fff; text-decoration:none;font-size: 18px; font-weight: 600;">Order Now</a></p>
+                                            <p class="promo3-btn" style="background: #f88439; width: fit-content; padding: 10px 20px; margin:30px 0 0 0;"><a href="#" style="text-transform: uppercase; color: #fff; text-decoration:none;font-size: 18px; font-weight: 600;">Order Now</a></p>
                                         </td>
                                     </tr>
                                 </table>
@@ -150,9 +248,9 @@
                         <!-- start of promo 4 -->
                         <tr>
                             <td>
-                                <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" style="font-family: 'Open Sans', sans-serif;">
+                                <table class="promo4" width="100%" border="0" cellspacing="0" cellpadding="0" align="center" style="font-family: 'Open Sans', sans-serif;">
                                     <tr>
-                                        <td align="center" style="padding: 60px 15px 0 15px">
+                                        <td style="padding: 60px 15px 0 15px; text-align: center;">
                                             <h2 style="margin: 0; padding:0; font-size: 35px; font-weight: 500;color: #b02731;">Specials</h2>
                                             
                                             <p style="margin: 0; padding:25px 0 30px 0; text-transform: uppercase;font-size: 14px; font-weight: 600;color: #686868;">some of our own recipes</p>
@@ -160,38 +258,38 @@
                                     </tr>
                                     <tr>
                                         <td style="padding: 0 15px">
-                                            <table width="50%" border="0" cellspacing="0" cellpadding="0" align="left" style="font-family: 'Open Sans', sans-serif;">
+                                            <table class="promo4-left" width="50%" border="0" cellspacing="0" cellpadding="0" align="left" style="font-family: 'Open Sans', sans-serif;">
                                                 <tr align="center">
                                                     <td style="margin:0; padding:0;" >
-                                                        <img src="./img/promo-4-2.jpeg" alt="" style="width: 250px;">
+                                                        <img src="./img/promo-4-2.jpeg" alt="" style="max-width: 250px;">
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td style="padding: 30px 20px 60px 20px;">
+                                                    <td class="promo4-td" style="padding: 30px 20px 60px 20px;">
                                                         <h3 style="margin: 0; padding:0; font-size: 23px; font-weight: 500;color: #b02731;">Lorem ipsum dolor sit amet, consectetur</h3>
     
                                                         <p style="margin: 0; padding:0; font-size: 16px; line-height: 2;color: #686868;">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
             
-                                                        <p style="background: #f88439; width: fit-content; padding: 10px 20px; margin:30px 0 0 0;"><a href="#" style="text-transform: uppercase; color: #fff; text-decoration:none;font-size: 18px; font-weight: 600;">Order Now</a></p>
+                                                        <p class="promo4-btn" style="background: #f88439; width: fit-content; padding: 10px 20px; margin:30px 0 0 0;"><a href="#" style="text-transform: uppercase; color: #fff; text-decoration:none;font-size: 18px; font-weight: 600;">Order Now</a></p>
             
             
                                                     </td>
                                                 </tr>
                                             </table>
 
-                                            <table width="50%" border="0" cellspacing="0" cellpadding="0" align="left" style="font-family: 'Open Sans', sans-serif;">
+                                            <table class="promo4-right" width="50%" border="0" cellspacing="0" cellpadding="0" align="left" style="font-family: 'Open Sans', sans-serif;">
                                                 <tr align="center">
                                                     <td style="margin:0; padding:0;">
-                                                        <img src="./img/promo-4-1.jpeg" alt="" style="width: 250px;">
+                                                        <img src="./img/promo-4-1.jpeg" alt="" style="max-width: 250px;">
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td style="padding: 30px 20px 60px 20px;">
+                                                    <td class="promo4-td" style="padding: 30px 20px 60px 20px;">
                                                         <h3 style="margin: 0; padding:0; font-size: 23px; font-weight: 500;color: #b02731;">Lorem ipsum dolor sit amet, consectetur</h3>
     
                                                         <p style="margin: 0; padding:0; font-size: 16px; line-height: 2;color: #686868;">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
             
-                                                        <p style="background: #f88439; width: fit-content; padding: 10px 20px; margin:30px 0 0 0;"><a href="#" style="text-transform: uppercase; color: #fff; text-decoration:none;font-size: 18px; font-weight: 600;">Order Now</a></p>
+                                                        <p class="promo4-btn" style="background: #f88439; width: fit-content; padding: 10px 20px; margin:30px 0 0 0;"><a href="#" style="text-transform: uppercase; color: #fff; text-decoration:none;font-size: 18px; font-weight: 600;">Order Now</a></p>
             
             
                                                     </td>
@@ -209,7 +307,7 @@
                         <!-- start of bottom banner -->
                         <tr>
                             <td>
-                                <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" style="font-family: 'Open Sans', sans-serif;">
+                                <table class="bottom-banner" width="100%" border="0" cellspacing="0" cellpadding="0" align="center" style="font-family: 'Open Sans', sans-serif;">
                                     <tr style="background: #F98F41;">
                                         <td align="center" style="padding: 60px 15px">
                                             <h2 style="margin: 0; padding:0; font-size: 35px; font-weight: 500;color: #fff;">Order Through Our Website</h2>
@@ -231,9 +329,9 @@
                         <!-- start of contact us-->
                         <tr>
                             <td>
-                                <table width="50%" border="0" cellspacing="0" cellpadding="0" align="left" style="font-family: 'Open Sans', sans-serif;">
+                                <table class="contact-us-left" width="50%" border="0" cellspacing="0" cellpadding="0" align="left" style="font-family: 'Open Sans', sans-serif;">
                                     <tr>
-                                        <td style="padding: 60px 15px 0 15px">
+                                        <td class="contact-us-td" style="padding: 60px 15px 0 15px">
 
                                             <h2 style="margin: 0; padding:0; font-size: 35px; font-weight: 500;color: #b02731;">Contact Us</h2>
                             
@@ -251,9 +349,9 @@
                                     </tr>
                                 </table>
 
-                                <table width="50%" border="0" cellspacing="0" cellpadding="0" align="right" style="font-family: 'Open Sans', sans-serif;">
+                                <table class="contact-us-right" width="50%" border="0" cellspacing="0" cellpadding="0" align="right" style="font-family: 'Open Sans', sans-serif;">
                                     <tr>
-                                        <td style="padding: 60px 15px">
+                                        <td class="contact-us-td" style="padding: 60px 15px">
 
                                             <img src="./img/location.svg" alt="" height="40px">
                             
@@ -278,7 +376,7 @@
                         <!-- start of footer -->
                         <tr>
                             <td>
-                                <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" style="font-family: 'Open Sans', sans-serif;">
+                                <table class="footer" width="100%" border="0" cellspacing="0" cellpadding="0" align="center" style="font-family: 'Open Sans', sans-serif;">
                                      
                                     <tr style="background: #f5f5f5;">
                                         <td align="center" style="padding: 30px 15px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px;">
