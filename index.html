@@ -11,20 +11,25 @@
         @media screen and (min-width: 599.98px){ 
             .under-six {
                 display: none !important;
-                height: 0;
             }
+
+            
         }
         @media screen and (max-width: 599.98px){
-            /* .color {
-                background-color: #fff;
-            } */
+            body {
+                overscroll-behavior: initial !important;
+            }
             .main-table {
-                max-width: 600px;
-                width: 100%;
+                max-width: 600px !important;
+                width: 100% !important;
+                margin: 0 !important;
             }
             .six {
                 display: none !important;
-                height: 0;
+            }
+
+            .color {
+                background-color: #ffffff !important;
             }
             
             
@@ -70,7 +75,7 @@
             <td align="center" valign="top"> 
 
                 <!-- ### CONTENT TABLE ### -->
-                <table align="center" width="600" border="0" cellspacing="0" cellpadding="0" style="margin: 5px 0; box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); border-radius: 3px; font-family: Arial, Helvetica, sans-serif;" bgcolor="#fff" class="main-table">
+                <table align="center" width="600" border="0" cellspacing="0" cellpadding="0" style="margin: 5px 0; box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); border-radius: 3px; font-family: Arial, Helvetica, sans-serif;" bgcolor="#fff" class="main-table color">
 
                     <!-- ### PREHEADER TEXT ### -->
                     <div style="font-size: 0px; color: #fafdfe; line-height: 1px; mso-line-height-rule: exactly; display: none; max-width: 0px; max-height: 0px; opacity: 0; overflow: hidden; mso-hide: all;">you haven’t seen colors like this before!
